@@ -5,7 +5,9 @@
 3. On clicking of any event will display a pop-up with event Event Details
 4. Search box in page will filter event based on text entered in it (Search is based on JSON.stringify of events not integrated filter on this scope).
 5. Add New event button will open pop up to enter details of new event and create it
+
 #Additional Feature (I opted this over Unit testing, I know UT is very important I always cover 100% but due to time constrain I am not doing UT now)
+
 6. Added Validation on Each field on Add Event page and error message will be displayed on empty values and on Submit.
 7. Weather report has been added on Event detail pop-up
 8. Weather report will be current weather only based on Latitude and Longitude provided on event (In Future based on city we can predict on given date).
