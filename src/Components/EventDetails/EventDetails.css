@@ -1,0 +1,13 @@
+.alignCenter {
+  text-align: center;
+}
+
+.rowStyle {
+  text-align: center !important;
+  width: 50%
+}
+
+.leftAlign {
+  text-align: left !important;
+  width: 50%
+}

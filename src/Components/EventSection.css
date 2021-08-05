@@ -1,0 +1,19 @@
+.sectionTop {
+  padding: 20px;
+}
+
+tr:hover {
+  background: white;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.buttonRight {
+  text-align: right;
+  margin-right: "15%";
+}
+
+.expandText {
+  width: "80%";
+}
