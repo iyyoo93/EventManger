@@ -54,24 +54,26 @@ function EventSection() {
             onChange={({ target: { value }}) => setSearch(value)}
           />
         </div>
-        <Table aria-label="simple table">
-          <TableHead>
-            {renderTableHead()}
-          </TableHead>
-          <TableBody>
-            {filteredEvent.map((row) => (
-              <TableRow
-                key={row.eventId}
-                onClick={() => {
-                  setModal(true);
-                  setModalInfo(row);
-              }}
-              >
-                {renderTableCell(row)}
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        <div className="sectionTable">
+          <Table aria-label="simple table">
+            <TableHead>
+              {renderTableHead()}
+            </TableHead>
+            <TableBody>
+              {filteredEvent.map((row) => (
+                <TableRow
+                  key={row.eventId}
+                  onClick={() => {
+                    setModal(true);
+                    setModalInfo(row);
+                }}
+                >
+                  {renderTableCell(row)}
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
         <EventModal isOpen={modal || addEvent} setModal={setModal} >
           {modalInfo ? <EventDetails
             event={modalInfo}

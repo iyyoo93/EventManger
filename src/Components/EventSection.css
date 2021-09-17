@@ -2,7 +2,7 @@
   padding: 20px;
 }
 
-tr:hover {
+.sectionTable tr:hover {
   background: white;
   text-decoration: underline;
   color: blue;
